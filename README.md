@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+# dHealth Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project is the contract related section to the dHealth dApp. 
 
-Try running some of the following tasks:
+### Acknowledgements
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Final Project for 6th trimester of studies for Web Development at SAE Institute Belgrade.
+
+William Nonato & SAE Institute Belgrade &copy; 2022.

@@ -1,10 +1,8 @@
-# dHealth Smart Contract
+# dHealth dApp
 
-This project is the contract related section to the dHealth dApp. 
+This project is the final project of my studies at SAE Institute Belgrade. This project includes Vue.Js, hardhat and solidity. Stiled with TailwindCSS.
 
-Here is the verified contract address for easy look up on [goerli.etherscan.io](https://goerli.etherscan.io/) :
-
-* *0x4bC6836a35e0C22579c89B5e31e0eaB2645a516b*
+Client side is separated in the *fp-dhealth-vue* directory, while blockchain related work is located in *fp-dhealth-hardhat* directory.
 
 ### Acknowledgements
 

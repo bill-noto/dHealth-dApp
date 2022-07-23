@@ -22,7 +22,7 @@ export default {
       try {
         const { ethereum } = window;
         if (!ethereum) {
-          alert("Make sure you have metamask!");
+          alert("Make sure you have the Metamask browser plugin!");
           return;
         } else {
           console.log("We have the ethereum object", ethereum);

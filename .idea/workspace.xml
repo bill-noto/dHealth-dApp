@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fe197db-d1f6-4768-ae91-88998c3d6ee3" name="Changes" comment="reorganized project, with addition of a Vue.Js frontend">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="3fe197db-d1f6-4768-ae91-88998c3d6ee3" name="Changes" comment="updated README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +46,7 @@
       <updated>1658582595146</updated>
       <workItem from="1658582598074" duration="2925000" />
       <workItem from="1658594240171" duration="1655000" />
-      <workItem from="1658596098796" duration="784000" />
+      <workItem from="1658596098796" duration="1099000" />
     </task>
     <task id="LOCAL-00001" summary="reorganized project, with addition of a Vue.Js frontend">
       <created>1658596544430</created>
@@ -64,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658596692391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated README.md">
+      <created>1658597223561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658597223561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +91,7 @@
       <path value="$PROJECT_DIR$/fp-dhealth-vue" />
     </ignored-roots>
     <MESSAGE value="reorganized project, with addition of a Vue.Js frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganized project, with addition of a Vue.Js frontend" />
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-//SPDX-License-Identifier: Unlicensed
+//SPDX-License-Identifier: Unlicense
 
 pragma solidity ^0.8.9;
 
@@ -35,6 +35,8 @@ contract Users {
         );
     }
 
+    event GetUser(User);
+
     /**
     * Function to add a new user to the system.
     * @param _name           The name of the new user
@@ -63,6 +65,7 @@ contract Users {
             block.timestamp
         );
         numUser++;
+        emit GetUser(user);
     }
 
     /**
@@ -90,6 +93,7 @@ contract Users {
         user.age = _age;
         user.updatedAt = block.timestamp;
 
+        emit GetUser(user);
         return user;
     }
 
@@ -98,9 +102,10 @@ contract Users {
     * @param _userId     The id of the user to retrieve
     * @return user     Returns the requested information
     */
-    function getUser(uint256 _userId) public view returns (User memory) {
+    function getUser(uint256 _userId) public  returns (User memory) {
         require((_userId > 0) || (_userId <= numUser), "Invalid user id");
 
+        emit GetUser(users[_userId]);
         return users[_userId];
     }
 }

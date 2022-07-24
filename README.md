@@ -1,3 +1,8 @@
+<p align="center">
+<img src="./fp-dhealth-vue/src/assets/logo_dhealth.png" alt="dHealth Logo">
+</p>
+
+
 # dHealth dApp
 
 This project is the final project of my studies at SAE Institute Belgrade. This project includes Vue.Js, hardhat and solidity. Stiled with TailwindCSS.

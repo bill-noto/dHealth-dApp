@@ -3,7 +3,6 @@
 pragma solidity ^0.8.9;
 
 contract Users {
-
     // data structure for users, with all their information
     struct User {
         uint8 id;
@@ -27,30 +26,24 @@ contract Users {
      */
     constructor() {
         numUser = 1;
-        addUser(
-            "Government",
-            "None",
-            "No Description",
-            0
-        );
+        addUser("Government", "None", "No Description", 0);
     }
 
     event GetUser(User);
 
     /**
-    * Function to add a new user to the system.
-    * @param _name           The name of the new user
-    * @param _illnesses      Any illnesses that the user might have
-    * @param _illnesses_description       The description of the illnesses
-    * @param _age       Age of user
-    */
+     * Function to add a new user to the system.
+     * @param _name           The name of the new user
+     * @param _illnesses      Any illnesses that the user might have
+     * @param _illnesses_description       The description of the illnesses
+     * @param _age       Age of user
+     */
     function addUser(
         string memory _name,
         string memory _illnesses,
         string memory _illnesses_description,
         uint _age
-    ) public  {
-
+    ) public {
         User storage user = users[numUser];
         user.creator = msg.sender;
 
@@ -69,22 +62,21 @@ contract Users {
     }
 
     /**
-    * Function to update an user with new information given in input
-    * @param _userId        The id of the user to be searched in storage
-    * @param _name           The name of the user to update
-    * @param _illnesses      Any illnesses that the user might have
-    * @param _illnesses_description       The description of the illnesses
-    * @param _age            Age of user
-    * @return _user          Returns the user and his information after update
-    */
+     * Function to update an user with new information given in input
+     * @param _userId        The id of the user to be searched in storage
+     * @param _name           The name of the user to update
+     * @param _illnesses      Any illnesses that the user might have
+     * @param _illnesses_description       The description of the illnesses
+     * @param _age            Age of user
+     * @return _user          Returns the user and his information after update
+     */
     function updateUser(
         uint256 _userId,
         string memory _name,
         string memory _illnesses,
         string memory _illnesses_description,
         uint _age
-    ) public  returns (User memory){
-
+    ) public returns (User memory) {
         User storage user = users[_userId];
 
         user.name = _name;
@@ -98,11 +90,11 @@ contract Users {
     }
 
     /**
-    * Function to retrieve the user in question.
-    * @param _userId     The id of the user to retrieve
-    * @return user     Returns the requested information
-    */
-    function getUser(uint256 _userId) public  returns (User memory) {
+     * Function to retrieve the user in question.
+     * @param _userId     The id of the user to retrieve
+     * @return user     Returns the requested information
+     */
+    function getUser(uint256 _userId) public returns (User memory) {
         require((_userId > 0) || (_userId <= numUser), "Invalid user id");
 
         emit GetUser(users[_userId]);

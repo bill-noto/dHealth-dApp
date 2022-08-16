@@ -10,6 +10,12 @@ Here is the verified contract address for easy look up on [goerli.etherscan.io](
 
 * *0x4419C04C75BC89f8858d19eb8df39957c2134fE2*
 
+
+## Project setup
+```
+npm install
+```
+
 ### Acknowledgements
 
 Final Project for 6th trimester of studies for Web Development at SAE Institute Belgrade.
